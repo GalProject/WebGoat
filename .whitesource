@@ -8,7 +8,8 @@
 "scanSettingsSAST": {
 "enableScan": "true",
 "enableRemediation": "true",
-"ScanPullRequests": "true"
+"ScanPullRequests": "true",
+"baseBranches": ["GalProject-patch-2"]
 },
 "checkRunSettings": {
 "vulnerableCheckRunConclusionLevel": "failure",
@@ -25,6 +26,8 @@
 }
 }
 }
+
+
 
 
 
