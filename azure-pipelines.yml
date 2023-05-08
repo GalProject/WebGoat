@@ -15,5 +15,5 @@ steps:
     SASTCLI_TOKEN: $(sast.clitoken)
     SAST_SERVER: $(sast.server)
 
-- publish: /home/vsts/work/_temp/
+- publish: /home/vsts/.mendsastcli/logs/
   artifact: "Mend CLI logs"
