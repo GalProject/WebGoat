@@ -17,7 +17,7 @@ steps:
   curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli
   chmod +x ./mendsastcli
   echo Mend SAST CLI downloaded successfully
-  ./mendsastcli --name='ADO' --app '$(systemName)'
+  ./mendsastcli --dir '.' --app 'test1234'
   
   env:
     SAST_ORGANIZATION: $(sast.organisation)
