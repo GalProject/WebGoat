@@ -6,14 +6,5 @@ pool:
 
 steps:
 
-- script: |
-      curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli
-      chmod +x ./mendsastcli
-      echo Mend SAST CLI downloaded successfully
-      ./mendsastcli --name='$(systemName)' --app '$(systemName)'
-  env:
-    SASTCLI_TOKEN: $(sast.clitoken)
-    SAST_SERVER: $(sast.server)
-
 - publish: /home/vsts/.mendsastcli/logs/
   artifact: "Mend CLI logs"
