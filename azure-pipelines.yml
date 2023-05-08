@@ -8,5 +8,5 @@ pool:
 
 steps:
 
-- publish: ~/.mendsastcli/logs
+- publish: .mendsastcli/logs
   artifact: "Mend CLI logs"
