@@ -14,6 +14,5 @@ steps:
       echo Mend SAST CLI downloaded successfully
       ./mendsastcli --name='test1234' --app 'test1234'
   env:
-    SAST_ORGANIZATION: $(sast.organisation)
     SASTCLI_TOKEN: $(sast.clitoken)
     SAST_SERVER: $(sast.server)
