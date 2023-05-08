@@ -4,17 +4,21 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
+jobs:
+- job: Job1
+  steps:
 
-- script: |
-      curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli
-      chmod +x ./mendsastcli
-      echo Mend SAST CLI downloaded successfully
-      ./mendsastcli --name='$(systemName)' --app '$(systemName)'
-  env:
-    SAST_ORGANIZATION: $(sast.organisation)
-    SASTCLI_TOKEN: $(sast.clitoken)
-    SAST_SERVER: $(sast.server)
+  - script: |
+        curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli
+        chmod +x ./mendsastcli
+        echo Mend SAST CLI downloaded successfully
+        ./mendsastcli --name='$(systemName)' --app '$(systemName)'
+    env:
+      SAST_ORGANIZATION: $(sast.organisation)
+      SASTCLI_TOKEN: $(sast.clitoken)
+      SAST_SERVER: $(sast.server)
 
-- publish: /home/vsts/.mendsastcli/logs/
-  artifact: "Mend CLI logs"
+- job: Job2
+  steps:
+  - publish: /home/vsts/.mendsastcli/logs/
+    artifact: "Mend CLI logs"
