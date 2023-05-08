@@ -19,7 +19,7 @@ steps:
   echo Mend SAST CLI downloaded successfully
   ./mendsastcli --name='ADO' --app '$(systemName)'
   
-env:
-SAST_ORGANIZATION: $(sast.organisation)
-SASTCLI_TOKEN: $(sast.clitoken)
-SAST_SERVER: $(sast.server)
+  env:
+    SAST_ORGANIZATION: $(sast.organisation)
+    SASTCLI_TOKEN: $(sast.clitoken)
+    SAST_SERVER: $(sast.server)
