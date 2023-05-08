@@ -17,4 +17,3 @@ steps:
     SAST_ORGANIZATION: $(sast.organisation)
     SASTCLI_TOKEN: $(sast.clitoken)
     SAST_SERVER: $(sast.server)
-  displayName: 'Mend Scan'
