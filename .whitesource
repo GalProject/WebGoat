@@ -1,4 +1,23 @@
 {
-"settingsInheritedFrom": "whitesource-config/whitesource-config@main"
+	"issueSettings": {
+		"minSeverityLevel": "LOW",
+		"issueType": "DEPENDENCY"
+	},
+	"pullRequestStatusSettings": {
+		"vulnerablePullRequestStatus": "failed",
+		"displayMode": "diff",
+		"useMendStatusNames": true
+	},
+	"remediateSettings": {
+		"workflowRules": {
+			"enabled": true
+		}
+	},
+	"scanSettings": {
+		"configMode": "AUTO",
+		"configExternalURL": "",
+		"baseBranches": [],
+		"enableLicenseViolations": true
+	},
+	"settingsInheritedFrom": "whitesource-config/whitesource-config@main"
 }
-
