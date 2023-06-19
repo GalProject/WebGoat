@@ -1,24 +1,27 @@
----
-trigger:
-  - main
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: ubuntu-latest
 
-jobs:
-- job: Job1
-  steps:
+trigger: none
 
-  - script: |
-        curl -LJO https://downloads-sast.mend.io/sast-cli/linux/mendsastcli
-        chmod +x ./mendsastcli
-        echo Mend SAST CLI downloaded successfully
-        ./mendsastcli --name='$(systemName)' --app '$(systemName)'
-    env:
-      SAST_ORGANIZATION: $(sast.organisation)
-      SASTCLI_TOKEN: $(sast.clitoken)
-      SAST_SERVER: $(sast.server)
+parameters:
+- name: pat
+  displayName: PAT token
+  type: string
 
-- job: Job2
-  steps:
-  - publish: /home/vsts/.mendsastcli/logs/
-    artifact: "Mend CLI logs"
+steps:
+  - task: npmAuthenticate@0
+    inputs:
+      workingFile: .npmrc
+  - task: UseDotNet@2
+    displayName: Install .NET SDK
+    inputs:
+      packageType: sdk
+      version: 7.x
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      customCommand: install -g renovate yarn
+  - powershell: |
+      renovate --token="${{ parameters.pat }}"
+    displayName: Run Mend Renovate
+
