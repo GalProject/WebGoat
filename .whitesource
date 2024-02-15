@@ -13,10 +13,9 @@
 "issueSettings": {
 "minSeverityLevel": "LOW",
 "issueType": "DEPENDENCY"
-}
+},
 "remediateSettings": {
     "enableRenovate": false
-    
   }
 }
 
