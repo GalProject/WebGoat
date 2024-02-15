@@ -15,7 +15,7 @@
 "issueType": "DEPENDENCY"
 },
 "remediateSettings": {
-    "enableRenovate": false
+    "enableRenovate": true
   }
 }
 
