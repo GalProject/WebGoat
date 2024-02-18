@@ -1,25 +1,73 @@
 {
-"scanSettings": {
-"configMode": "AUTO",
-"configExternalURL": "",
-"projectToken": "",
-"baseBranches": []
-},
-"checkRunSettings": {
-"vulnerableCheckRunConclusionLevel": "failure",
-"displayMode": "diff",
-"useMendCheckNames": true
-},
-"issueSettings": {
-"minSeverityLevel": "LOW",
-"issueType": "DEPENDENCY"
-},
-"remediateSettings": {
-    "enableRenovate": true
-  }
+	"checkRunSettings": {
+		"vulnerableCheckRunConclusionLevel": "failure",
+		"displayMode": "diff"
+	},
+	"hostRules": [
+		{
+			"matchHost": "https://vonagecc.jfrog.io/artifactory/api/nuget/v3/nuget-local",
+			"hostType": "nuget",
+			"userName": "mend.plugin",
+			"encrypted": {
+				"token": "wcBMA8xOaBJvzJNbAQf/X9rXRdkVZ9F1cQY7W2BRPq0C9wbBgMW6FQskCDmBW1LRupfpaZa02PJMTKK5mGgagCcsZKVrUn+a4JTXidArBHS7mtM4yMPVFSZdB9eTQaOu7L/ficdt6q/2gcDzuIY+dLVChFKysu6IrYwJDKutKJMro6+btwckMqw6A1I86fhJs5//xu6k5sZcBGTJDicI6S17zCo/9cRUuOjiFQyXKxzSFZXmVCIGY4+LhCYbyX+ON/6YAd1CzEankHNK0FNfAj2mo24QuTTmyrHMtKjKrYo30PCqwpPZamgV58FDjMywF8jGlRc1DcxkLdO+FomI21c6OJbo+KH1p6I2G0BiMNJZAXhBYwCV3RygRGOQeLMiH8k9yWjJrp9ppZ6S9BOWiM4wgw9meQhdzpOy69e2ylgkmqOjvI51sC0hZsXCBSQK9QvfS2F5X8FsDdntV08GimxG9dj3iZUs9AQ"
+			}
+		},
+		{
+			"matchHost": "https://vonagecc.jfrog.io/artifactory/api/nuget/v3/nuget",
+			"hostType": "nuget",
+			"userName": "mend.plugin",
+			"encrypted": {
+				"token": "wcBMA8xOaBJvzJNbAQf/X9rXRdkVZ9F1cQY7W2BRPq0C9wbBgMW6FQskCDmBW1LRupfpaZa02PJMTKK5mGgagCcsZKVrUn+a4JTXidArBHS7mtM4yMPVFSZdB9eTQaOu7L/ficdt6q/2gcDzuIY+dLVChFKysu6IrYwJDKutKJMro6+btwckMqw6A1I86fhJs5//xu6k5sZcBGTJDicI6S17zCo/9cRUuOjiFQyXKxzSFZXmVCIGY4+LhCYbyX+ON/6YAd1CzEankHNK0FNfAj2mo24QuTTmyrHMtKjKrYo30PCqwpPZamgV58FDjMywF8jGlRc1DcxkLdO+FomI21c6OJbo+KH1p6I2G0BiMNJZAXhBYwCV3RygRGOQeLMiH8k9yWjJrp9ppZ6S9BOWiM4wgw9meQhdzpOy69e2ylgkmqOjvI51sC0hZsXCBSQK9QvfS2F5X8FsDdntV08GimxG9dj3iZUs9AQ"
+			}
+		},
+		{
+			"matchHost": "https://vonagecc.jfrog.io/artifactory/api/nuget/v3/nuget-legacy",
+			"hostType": "nuget",
+			"userName": "mend.plugin",
+			"encrypted": {
+				"token": "wcBMA8xOaBJvzJNbAQf/X9rXRdkVZ9F1cQY7W2BRPq0C9wbBgMW6FQskCDmBW1LRupfpaZa02PJMTKK5mGgagCcsZKVrUn+a4JTXidArBHS7mtM4yMPVFSZdB9eTQaOu7L/ficdt6q/2gcDzuIY+dLVChFKysu6IrYwJDKutKJMro6+btwckMqw6A1I86fhJs5//xu6k5sZcBGTJDicI6S17zCo/9cRUuOjiFQyXKxzSFZXmVCIGY4+LhCYbyX+ON/6YAd1CzEankHNK0FNfAj2mo24QuTTmyrHMtKjKrYo30PCqwpPZamgV58FDjMywF8jGlRc1DcxkLdO+FomI21c6OJbo+KH1p6I2G0BiMNJZAXhBYwCV3RygRGOQeLMiH8k9yWjJrp9ppZ6S9BOWiM4wgw9meQhdzpOy69e2ylgkmqOjvI51sC0hZsXCBSQK9QvfS2F5X8FsDdntV08GimxG9dj3iZUs9AQ"
+			}
+		},
+		{
+			"matchHost": "https://registry.npmjs.org",
+			"hostType": "npm",
+			"userName": "idanvon",
+			"encrypted": {
+				"token": "wcBMA8xOaBJvzJNbAQf9GI2fmw/U9doYzVNOP1/Em8AKPjUEMeLRS9BvkcwLequDBNp+GN2UBMHLqUysI8lcFwhofdwqpVwit2H1gKlZCAQPfBhIRBnBcTDSIRfcglf1hHKgqJOqwKeUgWk1jbQ8SErLyaGAv+83rHHYT3sbsCFqlrymp3DMb4MwsbE1iWZvuqmj+NQYUv4tf8ujpCDx5XzjK4ZfP0Uuzgnf1F0Y3L7+ULgyogfa7zTqbsvccZsGPqAZRojfE2LqAIYyVSzwXCDFFQKAcRGsUa4DXuiH7x40+kxRRH9pe5bP8w8E6XIRPRsmWOoRsIiuZsbODeSVaPNIAf09K+nyplPTbGatOdJ1ATYhlz1Dylwsd07Lbi9GirNUf9UrJZ8A2ZZsoI2osVr89SODeJeKX8LO7ozsBKegEgdwqvp0HnAzwWTeKlC1eSo02QhBy+vuRgbWfguzHur4qOaQvfwnXB2Rt7+Ps+oLxt5jYQnYfO36rB9N2QtR10jbtRU1"
+			}
+		}
+	],
+	"issueSettings": {
+		"minSeverityLevel": "LOW",
+		"issueType": "DEPENDENCY",
+		"displayLicenseViolations": true
+	},
+	"leastVulnerablePackageSettings": {
+		"enabled": true
+	},
+	"remediateSettings": {
+		"workflowRules": {
+			"enabled": true
+		},
+		"enableRenovate": true,
+		"extends": [
+			"config:base",
+			"github>whitesource/merge-confidence:beta"
+		],
+		"dependencyDashboard": true,
+		"dependencyDashboardTitle": "Renovate Greg Test 🤖"
+	},
+	"scanSettings": {
+		"configMode": "AUTO",
+		"configExternalURL": "",
+		"baseBranches": [
+			"master",
+			"main",
+			"develop",
+			"release"
+		],
+		"enableLicenseViolations": true,
+		"enableIaC": true
+	},
+	"settingsInheritedFrom": "vonage/whitesource-config@main"
 }
-
-
-
-
-
