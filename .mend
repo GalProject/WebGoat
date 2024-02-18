@@ -9,7 +9,6 @@
     "displayMode": "diff",
     "useMendCheckNames": true
   },
-{
   "hostRules": [
     {
       "matchHost": "https://pkgs.dev.azure.com/galgernitzky/_packaging/galgernitzky/maven/v1",
@@ -19,8 +18,7 @@
         "password": "wcBMA8xOaBJvzJNbAQf/XzsW1f5izwO90DXhNJGwUqgyW/5BAszGSp2c8a+aOWTms/JVGq7Qa5mf59w8osjsi1oyKAmqG9Jj+loTS12R7Tblq29kW+BXjXHR4NnjQBkxyeq7GoDJX5wjpep4/aVMgBYJxGcZugMxcNK8Tlry/0KB2FTUC8bL3YeJ604Lw3ZBuSx75Iec1MCEhViKug4VJIDNIslQR3E75xBrm+u+D0CZsjYR0gAFKQ1ktNcCuOHQk/FXBU+K95DPNDxluPNIRtGc72DFPIne9BhSfL0pfSHyqVgfCNMyLOE75RAhij9iXSjMBbO8cSk/vgwlxS4y0EM25C9K+y5i+bg3AyDB+NJ+AaiyEJKBFtvfiYLjF+8A/J/39J8u1DgtazssfZOZBGHW/i/qI2YA0uCCXBjWynPi1zijno1DblORd2jIQ1owXahBewswTF/EKtSiAwKwYnsX757eh+pqtHqmAjN65PF1CLJVkqfwK09U/jU31El7tEx7HB0rgD5IuZuEs8++"
       }
     }
-  ]
-},
+  ],
   "issueSettings": {
     "minSeverityLevel": "LOW",
     "issueType": "DEPENDENCY"
