@@ -19,15 +19,5 @@
       "enabled": true
     },
 	"enableRenovate": true
-  },
-  "hostRules": [
-    {
-      "matchHost": "https://galg.jfrog.io/artifactory/api/nuget/v3/galg-nuget",
-      "hostType": "nuget",
-      "userName": "hostrules",
-      "encrypted": {
-        "token": "wcBMA8xOaBJvzJNbAQgAoB2iFAPykj7ghEiygCAE/BX2L9enitnxIpdYpJuzV3r8AIDWb+jwgYJeI0X+5p2D8Zh+nc6Ti78ZtIOxt50DeG5fj9CV8FQd5j5hWDM+33fooZ4SRW0EOCr8dfCJbqx1tokx3oVAlvL/ZE/1DxBfrjFxAwBaao7cCvhjZdcoqJTQblBDNXB6ew5Pu4vwi58T4a/FeLyicKEjBlLwl+PzuRnX02LErIghMmsvtk5Fr0/j89iX6X2USwOqNYdEgL0ROt/u28ZqVrABNG6g1q+8gxcnxv1lb0O7GMS3K4AYUOmfgbnPKNYxx6192LzxyBFK1TM1/TayE7fLg4UOGx+rltLCcwGphgut38Yij3AXfXUM2Z+3dK133TrAgb/gT8V9QlQmo+n2WWgfgvWLSvlhHYV1ILj3qo9EATvF3IJC5cXzg9ozLaSbzgGVjo7dTC3qPfeunWH49vyYMRtPuqZm/Ul+zWMyjoOampanosA/VylUzMbXI+7v2WdxadmgrEwYhzK6o3Rknvo5idyBYFrVKowZymE6IiIu/h5dbJwhosMzPp5ybyUxR8rmPb1UtDAL6gVVY2uya8eMYsTvV2+7vTQZhonzOn0nrZisX1u/82q5cTm+ISfMKV74/WsFQR90xD9YwMfaJmZdZXMfDDqXwzmPQG9r2it6yKpGgW+Qyu2YfJXEZOm38iVx6IxFv5cD4xiIYvRyps6FrPlRz8+5FzjX2/HQiKDxZz2QmKuhXV1eu7L/EJeUhMtPC3evay9CrbPhCtdVR9tPWEgJFeLCWO5aRZEBTYGsNsLDcZav40sh4E7q6i+etA7Ns8lJeB/XvIHcxCNcrIP0bkAfZrhA6Yic8u6toTE6xXC6WOvcBZzPzAV1KCgWvaT7lyGhSY4lo1MG55XwynEMxKsAlzeIADgYkPKknusQaINWeWE4rUPmpP2H+Zf9sqWivM7f3pxWMTrglp/PGAR748Wotloxaa/ZIwUdSKK+QTDpfjCtGJ5ikoXR1S2HJBeHSw/yuFAcHIWJAgbD0ULLjqFTtL0Xgzedr03RfrjgtNkqdgIqUjed+G1vHjYiS3fDVnD8zG493uliNfj0QpTLqNKnPweFiuAat1ennAO4uv8Z7jDkSvjuMLjHtxwfcEMlV4DXf+xkswU45R3qUIIQ8USRkXqQENZR8UMTOrsG6EcO4ngRBwDxyKSKwhPAwRHgBOFYga3xzWHI2wDN6vf/a+1AIHIfh7I8+8FpCUQ56HPikhLN4H8rwicJirdSyZuhqLmFb10hgUdHXDnpt3ttMtGdhIhAgJAqP4nOeJbBTR6c4QaWtByUaVowFqXHi0J+ow8XdnquYOdpynKNHeCMNcJF0E3rF0MsdKS2cxiMmz+0iffmFyGH0fMM0i8GSM7sHGwyuliCl6YnAP5M0OdIOLUSJiHFJpgBSALZ8Q"
-      }
-    }
-  ]
+  }
 }
